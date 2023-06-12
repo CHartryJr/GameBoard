@@ -3,7 +3,7 @@ import com.hartrytech.llc.Game.Scripts.Board.Layout.Layout;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-public class Board extends Application
+class Board extends Application
 {
     private static boolean first = true;
     private Layout currentLayout;

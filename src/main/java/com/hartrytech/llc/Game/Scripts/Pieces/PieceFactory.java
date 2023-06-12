@@ -1,14 +1,26 @@
-protected class PieceFactory 
+package com.hartrytech.llc.Game.Scripts.Pieces;
+
+class PieceFactory 
 {
-    private GamePeice piece = null;
+    private GamePiece piece = null;
     private static boolean first = true;
-    public GamePiece makeGamePiece(String game,String piece)
+    
+     GamePiece makeGamePiece(String game,String gamePiece)
     {
         if(!first)
          first = false;
         else
          throw new InstantiationError("can not make More than one instance");
-        currentLayout = gameLayout;
-
+        
+         switch (game.toLowerCase()) 
+         {
+            case "chess":
+                break;
+            case "checkers":
+                break;
+            case "battlship":
+                break;
+         }
+        return piece;
     }
 }
