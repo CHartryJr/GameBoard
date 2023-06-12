@@ -12,12 +12,12 @@ public class Menus extends Application
     public void start(Stage menusStage) throws Exception 
     {
         Group root = new Group();
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root,200,250);
         menusStage.setScene(scene);
         menusStage.show(); 
     }
 
-    public void start(String [] args) 
+    public void startGame(String [] args) 
     {
         Application.launch(args);
     }
