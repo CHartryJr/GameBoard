@@ -1,5 +1,7 @@
 package com.hartrytech.llc.Game.Scripts.Board;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -8,18 +10,20 @@ import javafx.stage.Stage;
 public class Menus extends Application
 {
 
+    private static Scene scene;
+
     @Override
-    public void start(Stage menusStage) throws Exception 
+    public void start(Stage stage) throws IOException 
     {
         Group root = new Group();
-        Scene scene = new Scene(root,200,250);
-        menusStage.setScene(scene);
-        menusStage.show(); 
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
-
-    public void startGame(String [] args) 
+    
+    public void startGame() 
     {
-        Application.launch(args);
+        Application.launch();
     }
     
 }

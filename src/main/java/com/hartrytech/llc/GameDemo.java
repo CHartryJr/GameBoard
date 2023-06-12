@@ -12,7 +12,7 @@ public class GameDemo
     public static void main(String[] args) 
     {
         Menus game = new Menus();
-        game.startGame(args);
+        game.startGame();
     }
 
 }
