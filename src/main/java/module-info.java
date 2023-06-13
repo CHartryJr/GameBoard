@@ -4,4 +4,5 @@ module com.hartrytech.llc {
     
     opens com.hartrytech.llc to javafx.fxml;
     exports com.hartrytech.llc.Game.Scripts.Board;
+    
 }
