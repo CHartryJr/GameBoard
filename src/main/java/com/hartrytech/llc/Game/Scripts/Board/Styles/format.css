@@ -1,5 +1,21 @@
-#menustext
+.root
 {
-    -fx-font-size: 20px;
-    -fx-text-fill: yellow;
+    -fx-background-color: linear-gradient(
+        from 0% 0% to 100% 200%,
+        repeat,
+        #af7c5c 0%,
+        #291709 50%
+      );
+      -fx-font-family: "Lucida Console";
 }
+
+
+#ButtonBox > * 
+{
+     position: absolute;
+     inset: -5px; /* control the spread */
+     transform: translate(10px, 8px); /* control the offsets */
+     z-index: 1; /* place the element behind */
+    -fx-background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(111,234,255,0.7189250700280112) 45%, rgba(0,212,255,1) 100%);
+     filter: blur(10px); /* control the blur */
+  }

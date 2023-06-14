@@ -2,33 +2,26 @@ package com.hartrytech.llc.Game.Scripts.Board;
 
 import java.io.IOException;
 import javafx.application.Application;
-import javafx.scene.Group;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.Text;
+
 import javafx.stage.Stage;
 
 public class Menus extends Application
 {
     private static Scene scene;
-    private final int X_FRAME_SIZE = 500;
-    private final int Y_FRAME_SIZE = 500;
-
+    
     @Override
     public void start(Stage stage) throws IOException 
     {
-        Group root = new Group();
-        scene = new Scene(root,X_FRAME_SIZE,Y_FRAME_SIZE,Color.BLACK);
+        Parent root = FXMLLoader.load(getClass().getResource("fxml/MainMenus.fxml"));
+        scene = new Scene(root,500,500);
         stage.setTitle("Game Menus - Heartree Games");
         stage.setResizable(false);
-        Text text = new Text((X_FRAME_SIZE/2)-30,Y_FRAME_SIZE/10,"Menu");
-        text.setId("menustext");
-        text.setFont(Font.font("Verdana",30));
-        text.setFill(Color.LAVENDERBLUSH);
-        root.getChildren().add(text);
-        scene.getStylesheets().add(getClass().getResource("Styles/format.css").toExternalForm());
         stage.setScene(scene);
+        scene.getStylesheets().add(getClass().getResource("Styles/format.css").toExternalForm());
         stage.show();
     }
     
@@ -36,5 +29,6 @@ public class Menus extends Application
     {
         Application.launch();
     }
-    
+   
+
 }
