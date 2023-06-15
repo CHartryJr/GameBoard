@@ -1,4 +1,4 @@
-package com.hartrytech.llc.Game.Scripts.Pieces;
+package com.hartrytech.llc.Games.Scripts.Pieces;
 
 class PieceFactory 
 {
@@ -18,7 +18,7 @@ class PieceFactory
                 break;
             case "checkers":
                 break;
-            case "battlship":
+            case "TicTack":
                 break;
          }
         return piece;

@@ -1,4 +1,4 @@
-package com.hartrytech.llc.Game.Scripts.Board;
+package com.hartrytech.llc.Games.Scripts.Board;
 
 import java.io.IOException;
 import javafx.application.Application;

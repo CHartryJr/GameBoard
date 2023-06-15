@@ -1,6 +1,6 @@
 package com.hartrytech.llc;
 
-import com.hartrytech.llc.Game.Scripts.Board.Menus;
+import com.hartrytech.llc.Games.Scripts.Board.Menus;
 
 
 /**

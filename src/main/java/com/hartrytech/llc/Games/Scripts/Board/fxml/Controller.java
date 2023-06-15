@@ -1,7 +1,9 @@
-package com.hartrytech.llc.Game.Scripts.Board.fxml;
+package com.hartrytech.llc.Games.Scripts.Board.fxml;
 
 import java.io.IOException;
-import com.hartrytech.llc.Game.Scripts.Board.Menus;
+
+import com.hartrytech.llc.Games.Scripts.Board.Menus;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
