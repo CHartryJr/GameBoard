@@ -12,30 +12,22 @@ import javafx.fxml.FXML;
  */
 public class Controller 
 {
-     @FXML
-     public void switchScene(String sceneName) 
-    {
-        try 
-        {
-            Menus.setRoot(sceneName);
-        } 
-        catch (IOException e) 
-        {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-    }
    
+    public void home(ActionEvent e)
+    {
+        Menus.switchScene("MainMenus");
+        System.out.println(e);
+    }
     public void games(ActionEvent e)
     {
-        switchScene("Games");
+        Menus.switchScene("Games");
     }
     public void  credits(ActionEvent e)
     {
-        switchScene("Credits");
+        Menus.switchScene("Credits");
     }
     public void settings(ActionEvent e)
     {
-        switchScene("Settings");
+        Menus.switchScene("Settings");
     }
 }

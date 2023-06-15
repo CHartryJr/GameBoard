@@ -1,24 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1">
-  <tabs>
-    <Tab text="Chess">
-      <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-      </content>
-         <graphic>
-            <Icon content="HELP_OUTLINE" />
-         </graphic>
-    </Tab>
-    <Tab text="Checkers">
-      <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-      </content>
-    </Tab>
-  </tabs>
-</TabPane>
+<SplitPane dividerPositions="0.1, 0.9" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="550.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hartrytech.llc.Games.Scripts.Board.fxml.Controller">
+  <items>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button id="return" mnemonicParsing="false" onAction="#home" text="Back" />
+         </children>
+      </HBox>
+      <SplitPane dividerPositions="0.49665551839464883" prefHeight="519.0" prefWidth="585.0">
+        <items>
+          <AnchorPane id="GameTab" minHeight="0.0" minWidth="0.0" prefHeight="20.0" prefWidth="100.0">
+               <children>
+                  <TabPane id="GameTabs" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="290.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab id="TicTab" text="Tick Tack Toe">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Button id="PlayTick" layoutX="122.0" layoutY="178.0" mnemonicParsing="false" text="Play" />
+                                 </children></AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab id="ChestTab" text="Chest">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Button id="PlayCheckers" layoutX="122.0" layoutY="178.0" mnemonicParsing="false" text="Play" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab id="CheckersTab" text="Checkers">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Button id="PlayTick" layoutX="122.0" layoutY="178.0" mnemonicParsing="false" text="Play" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Pane prefHeight="432.0" prefWidth="291.0">
+                     <children>
+                        <ScrollBar layoutX="279.0" orientation="VERTICAL" prefHeight="432.0" prefWidth="15.0" />
+                        <TextArea id="Description" layoutX="-1.0" layoutY="29.0" prefHeight="407.0" prefWidth="282.0" />
+                        <TextField alignment="CENTER" prefHeight="24.0" prefWidth="282.0" text="Game Description">
+                           <font>
+                              <Font name="System Italic" size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Pane prefHeight="177.0" prefWidth="585.0" />
+  </items>
+</SplitPane>
