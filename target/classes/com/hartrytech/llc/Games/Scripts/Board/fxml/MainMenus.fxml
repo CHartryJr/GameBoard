@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox id="MenusBox" alignment="CENTER" prefHeight="415.0" prefWidth="487.0" spacing="50.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hartrytech.llc.Game.Scripts.Board.fxml.Controller">
+<VBox id="MenusBox" alignment="CENTER" prefHeight="415.0" prefWidth="487.0" spacing="50.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hartrytech.llc.Games.Scripts.Board.fxml.Controller">
    <children>
       <HBox id="topMenus" alignment="CENTER_RIGHT" layoutX="30.0" layoutY="99.0" prefHeight="17.0" prefWidth="313.0">
          <effect>

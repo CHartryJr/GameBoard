@@ -1,11 +1,9 @@
 package com.hartrytech.llc.Games.Scripts.Board.fxml;
 
-import java.io.IOException;
-
 import com.hartrytech.llc.Games.Scripts.Board.Menus;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
+
 
 /**
  * Is a class that will be used to control the scene behaviors
